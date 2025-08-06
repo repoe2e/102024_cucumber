@@ -1,0 +1,56 @@
+# Diretórios e arquivos gerados pelo Maven
+/target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# Arquivos do Maven Wrapper
+.mvn/
+mvnw
+mvnw.cmd
+
+# Diretórios e arquivos gerados pelo Eclipse
+.classpath
+.project
+.settings/
+
+# Diretórios e arquivos gerados pelo IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+out/
+
+# Arquivos de log
+*.log
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos temporários
+*.tmp
+*.temp
+*.swp
+
+# Relatórios de testes
+/reports/
+/surefire-reports/
+/cucumber-reports/
+/allure-results/
+/allure-report/
+
+# Caches de ferramentas
+.gradle/
+build/
+target/
+.cache/
+
+# Ambiente
+.env
+
+# Arquivos do sistema operacional
+*.bak
+*.old
+*.orig
+
+# Arquivos gerados por IDEs e plugins de testes
+/test-output/
+testng-failed.xml
