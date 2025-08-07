@@ -1,14 +1,28 @@
 package dev.plataforma.tests;
 
+import org.openqa.selenium.WebDriver;
+
+import dev.plataforma.drivers.DriverManager;
+import dev.plataforma.pages.LoginPage;
+import io.cucumber.java.Before;
 import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.Entao;
 import io.cucumber.java.pt.Quando;
 
 public class LoginTest {
 
+	private WebDriver driver;
+	private LoginPage login;
+
+	@Before
+	public void setup() {
+		driver = DriverManager.getDriver();
+	}
+
 	@Dado("que o usuário esteja no formulário de login")
 	public void que_o_usuário_esteja_no_formulário_de_login() {
-
+		login = new LoginPage(driver);
+		login.acessarFormularioDeLogin();
 	}
 
 	@Quando("enviar o email e senha")
